@@ -1,0 +1,3 @@
+[submodule "gridlabd"]
+	path = gridlabd
+	url = https://github.com/arras-energy/gridlabd
