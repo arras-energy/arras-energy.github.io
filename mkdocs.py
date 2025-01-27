@@ -149,7 +149,7 @@ class Markdown:
             [r"__([^_]+)__",r"<U>\1</U>"], # underline
             [r"\[([^]]+)\]\(([^)]+)\)",r'<A HREF="\2" TARGET="content">\1</A>'], # decorated link
             [r"\[\[/(.+)\]\]",r'<A HREF="\1.html" TARGET="content">/\1</A>'], # internal link
-            [r"\(\(([^\)]+)\)\)",r'<A HREF="\1.html"><INPUT TYPE="submit" CLASS="header" VALUE="\1" TARGET="content"/></A>'],
+            [r"\(\(([^\)]+)\)\)",r'<A HREF="\1.html" TARGET="content"><INPUT TYPE="submit" CLASS="header" VALUE="\1"/></A>'],
             [r"\[image:([^]]*)\]",r'<IMG SRC="\1" ALT="\1" WIDTH="100%"/>'], # img
             [r"\[video:([^]]*)\]",r'<iframe width="560" height="315" src="https://www.youtube.com/embed/\1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'], # img
             ]
