@@ -348,7 +348,8 @@ if __name__ == "__main__":
 
     if not sys.argv[0] or len(sys.argv) == 1:
 
-        sys.argv = ["mkdocs.py","gridlabd/docs/","docs/",f"file://{os.getcwd()}/docs/"]
+        os.chdir("docs")
+        sys.argv = ["mkdocs.py","../gridlabd/docs/","./",f"file://{os.getcwd()}/"]
 
     files = main(source=sys.argv[1],\
         target=sys.argv[2],

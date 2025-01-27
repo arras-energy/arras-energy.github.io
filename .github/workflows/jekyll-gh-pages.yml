@@ -37,6 +37,7 @@ jobs:
           mkdir _site
           cd _site
           python3 ../mkdocs.py ../gridlabd/docs ./ https://arras-energy.github.io/
+          cp index.html _site
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
