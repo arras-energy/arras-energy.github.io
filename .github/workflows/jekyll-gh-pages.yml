@@ -33,8 +33,8 @@ jobs:
       - name: Build Docs
         run: |
           pwd
-          ls -lR
           git submodule sync --recursive gridlabd
+          ls -lR
           mkdir docs
           cd docs
           python3 ../mkdocs.py ../gridlabd/docs ./ https://arras-energy.github.io/
