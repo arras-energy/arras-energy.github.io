@@ -33,6 +33,7 @@ jobs:
       - name: Build Docs
         run: |
           pwd
+          git submodule init gridlabd
           git submodule update --recursive gridlabd
           ls -lR
           mkdir docs
