@@ -33,7 +33,7 @@ jobs:
       - name: Build Docs
         run: |
           pwd
-          git submodule sync --recursive gridlabd
+          git submodule update --recursive gridlabd
           ls -lR
           mkdir docs
           cd docs
